@@ -1,36 +1,26 @@
-{% extends "layouts/base-fullscreen.html" %}
+{% extends "layouts/base.html" %}
 
-{% block title %} Error 404 {% endblock %} 
+{% block title %} Page 404 {% endblock %} 
 
 <!-- Specific Page CSS goes HERE  -->
 {% block stylesheets %}{% endblock stylesheets %}
 
 {% block content %}
 
-    <!-- Section -->
-    <section class="min-vh-100 d-flex align-items-center bg-soft">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 d-flex align-items-center justify-content-center">
-                    <div class="signin-inner mt-3 mt-lg-0 bg-white shadow-soft border rounded border-light p-4 p-lg-5 w-100 fmxw-500">
-                        <div class="text-center text-md-center mb-4 mt-md-0">
-                            <h1 class="mb-0 h3">
-                              Error 404
-                            </h1>
-                            <br />
-                            <span class="font-weight-normal">
-                                Page not found.
-                            </span>                            
-                        </div>
-                        
-                        <form action="#" class="mt-4">
-                            <a href="/" class="btn btn-block btn-primary">Home</a>
-                        </form>
-                    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card card-profile">
+                <div class="card-body">
+                    <h6 class="card-category text-gray">Error 404</h6>
+                    <h4 class="card-title">
+                        Page not found
+                    </h4>
+                    <a href="/" class="btn btn-primary btn-round">Home</a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+
 
 {% endblock content %}
 
