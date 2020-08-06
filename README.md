@@ -27,7 +27,7 @@ Black Dashboard comes packed with all plugins that you might need inside a proje
 
 <br />
 
-![Jinja2 Black Dashboard - Template project provided by AppSeed.](https://raw.githubusercontent.com/app-generator/jinja2-black-dashboard/master/media/jinja2-black-dashboard-screen.png)
+![Jinja Template - Black Dashboard.](https://raw.githubusercontent.com/app-generator/jinja2-black-dashboard/master/media/jinja2-black-dashboard-screen.png)
 
 <br />
 
