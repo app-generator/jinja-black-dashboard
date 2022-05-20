@@ -35,15 +35,9 @@ $ git clone https://github.com/app-generator/jinja-black-dashboard.git
 $ cd jinja-black-dashboard
 ```
 
-> **Step 2** - Edit `.env` and set `DEBUG=True`. This will activate the `SQLite` persistance. 
-
-```txt
-DEBUG=True
-```
-
 <br />
 
-> **Step 3** - Start the APP in `Docker`
+> **Step 2** - Start the APP in `Docker`
 
 ```bash
 $ docker-compose up --build 
@@ -52,7 +46,6 @@ $ docker-compose up --build
 Visit `http://localhost:85` in your browser. The app should be up & running.
 
 <br />
-
 
 ## ✨ How to use it
 
