@@ -3,4 +3,4 @@
 Copyright (c) 2019 - present AppSeed.us
 """
 
-from app import app
+from apps import app

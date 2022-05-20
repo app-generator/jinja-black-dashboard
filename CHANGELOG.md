@@ -1,5 +1,10 @@
 # Change Log
 
+## [1.0.2] 2022-05-20
+
+- Version built with [Black Dashboard Generator](https://appseed.us/generator/black-dashboard/)
+- Timestamp: `2022-05-20 13:12`
+
 ## [1.0.1] 2021-01-10
 
 - Bump UI: Black Dashboard v1.0.1

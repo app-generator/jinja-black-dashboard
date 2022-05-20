@@ -14,4 +14,4 @@ app.config['TESTING'   ] = True
 app.config['SECRET_KEY'] = 'S#perS3crEt_JamesBond' 
 
 # Import routing to render the pages
-from app import views
+from apps import views

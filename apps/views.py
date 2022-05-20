@@ -8,7 +8,7 @@ from flask   import render_template, request
 from jinja2  import TemplateNotFound
 
 # App modules
-from app import app
+from apps import app
 
 # App main route + generic routing
 @app.route('/', defaults={'path': 'index.html'})
@@ -20,13 +20,12 @@ def index(path):
         # Detect the current page
         segment = get_segment( request )
 
-        # Serve the file (if exists) from app/templates/FILE.html
-        return render_template( path, segment=segment )
+        # Serve the file (if exists) from app/templates/home/FILE.html
+        return render_template( 'home/' + path, segment=segment )
     
     except TemplateNotFound:
-        return render_template('page-404.html'), 404
+        return render_template('home/page-404.html'), 404
 
-# Helper - Extract current page name from request 
 def get_segment( request ): 
 
     try:
@@ -39,4 +38,4 @@ def get_segment( request ):
         return segment    
 
     except:
-        return None   
+        return None  
