@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.0.3] 2022-05-25
+
+- Built with [Black Dashboard Generator](https://appseed.us/generator/black-dashboard/)
+  - Timestamp: `2022-05-25 09:31`
+- Codebase Improvements
+- Assets Management via `.env`
+  - `ASSETS_ROOT` variable  
+
 ## [1.0.2] 2022-05-20
 
 - Version built with [Black Dashboard Generator](https://appseed.us/generator/black-dashboard/)
