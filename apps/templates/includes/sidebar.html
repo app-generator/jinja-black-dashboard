@@ -13,43 +13,43 @@
                 </a>
             </div>
             <ul class="nav">
-                <li class="active ">
+                <li class="{% if 'index' in segment %} active {% endif %} ">
                     <a href="/">
                         <i class="tim-icons icon-chart-pie-36"></i>
                         <p>Dashboard</p>
                     </a>
                 </li>
-                <li>
+                <li class="{% if 'icons' in segment %} active {% endif %}">
                     <a href="/icons.html">
                         <i class="tim-icons icon-atom"></i>
                         <p>Icons</p>
                     </a>
                 </li>
-                <li>
+                <li class="{% if 'map' in segment %} active {% endif %}">
                     <a href="/map.html">
                         <i class="tim-icons icon-pin"></i>
                         <p>Maps</p>
                     </a>
                 </li>
-                <li>
+                <li class="{% if 'notifications' in segment %} active {% endif %}">
                     <a href="/notifications.html">
                         <i class="tim-icons icon-bell-55"></i>
                         <p>Notifications</p>
                     </a>
                 </li>
-                <li>
+                <li class="{% if 'user' in segment %} active {% endif %}">
                     <a href="/user.html">
                         <i class="tim-icons icon-single-02"></i>
                         <p>User Profile</p>
                     </a>
                 </li>
-                <li>
+                <li class="{% if 'tables' in segment %} active {% endif %}">
                     <a href="/tables.html">
                         <i class="tim-icons icon-puzzle-10"></i>
                         <p>Table List</p>
                     </a>
                 </li>
-                <li>
+                <li class="{% if 'typography' in segment %} active {% endif %}">
                     <a href="/typography.html">
                         <i class="tim-icons icon-align-center"></i>
                         <p>Typography</p>
