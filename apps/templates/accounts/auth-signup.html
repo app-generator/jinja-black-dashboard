@@ -56,25 +56,34 @@
                             <div class="card-body px-5 py-3">
                                 <form method="post">
                                     <div class="row">
-                                        {% csrf_token %}
-                                        {% for field in form %}
-                                        <div class="col-md-12 px-md-1">
+                                        <div class="col-md-12">
                                             <div class="form-group">
                                                 <label>
-                                                    {{field.label}} :
+                                                     Username :
                                                 </label>
-                                                {{field}}
+                                                <input class="form-control" id="username_create" name="username" required="" type="text" value="">
                                             </div>
-                                            <span class="form_error">{{ field.errors }}</span>
+                                            <span class="form_error"></span>
+                                            <div class="form-group">
+                                                <label>Email</label>
+                                                <input class="form-control" id="email_create" name="email" required="" type="email" value="">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Password</label>
+                                                <input class="form-control" id="pwd_create" name="password" required="" type="password" value="">
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-fill btn-primary">Register</button>
+                                                        <span style="margin: 12px !important;">
+                                                            Or <a href="{{url_for('accounts_signin')}}">Sign in</a>
+                                                        </span>
+                                            </div>   
                                         </div>
-							            {% endfor %}
-                                        <button type="submit" class="btn btn-fill btn-primary">Register</button>
-                                        <span style="margin: 12px !important;">
-                                            Or <a href="{% url 'auth_signin' %}">Sign in</a>
-                                        </span>                                        
+                                                                           
                                     </div>
                                 </form>
                             </div>
+                            
                         </div>
                     </div>
 

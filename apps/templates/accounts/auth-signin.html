@@ -56,26 +56,26 @@
                             <div class="card-body px-5 py-3">
                                 <form method="post">
                                     <div class="row">
-                                        {% csrf_token %}
-                                        {% if form.non_field_errors %}
-                                        {% for error in form.non_field_errors  %}
-                                        <small class="text-danger mb-3">{{ error }}</small>
-                                        {% endfor %}
-                                        {% endif %}
-                                        {% for field in form %}
+                                        <small class="text-danger mb-3"></small>
                                         <div class="col-md-12 px-md-1">
                                             <div class="form-group">
                                                 <label>
-                                                    {{field.label}} :
+                                                    Username :
                                                 </label>
-                                                {{field}}
+                                                <input class="form-control" id="username_login" name="username" required="" type="text" value="">
                                             </div>
-                                            <span class="form_error">{{ field.errors }}</span>
+                                            <span class="form_error"></span>
+                                            <div class="form-group">
+                                                <label>
+                                                    Password :
+                                                </label>
+                                                <input class="form-control" id="password_login" name="password" required="" type="password" value="">
+                                            </div>
+                                            <span class="form_error"></span>
                                         </div>
-							            {% endfor %}
                                         <button type="submit" class="btn btn-fill btn-primary">Login</button> 
                                         <span style="margin: 12px !important;">
-                                            Or <a href="{% url 'auth_signup' %}">Register</a>
+                                            Or <a href="{{url_for('accounts_signup')}}">Register</a>
                                         </span>                                        
                                     </div>
                                 </form>
