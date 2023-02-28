@@ -1,6 +1,4 @@
 {% extends 'layouts/base.html' %}
-{% load i18n static %}
-
 {% block title %} Sign OUT {% endblock %}
 {% block sidebar %}{% endblock sidebar %}
 {% block navigation %}{% endblock navigation %}
@@ -12,12 +10,12 @@
                     <div class="col-12 d-flex align-items-center justify-content-center">
                         <div class="bg-white shadow border-0 rounded p-4 p-lg-5 w-100 fmxw-500">
                             <div class="text-center text-md-center mb-4 mt-md-0">
-                                <h1 class="h3">{% trans 'Log in' %}</h1>
-                                <p class="text-gray">{% trans "Thanks for spending some quality time with the Web site today." %}</p>
+                                <h1 class="h3">Log in</h1>
+                                <p class="text-gray">Thanks for spending some quality time with the Web site today.</p>
                             </div>
                             <div class="mt-5">
                                 <div class="d-grid mt-3 d-flex justify-content-center">
-                                    <a href="{% url 'admin:index' %}" class="btn btn-gray-800">{% trans 'Log in again' %}</a>
+                                    <a href="{{url_for('accounts_signin')}}" class="btn btn-gray-800">Log in again</a>
                                 </div>
                             </div>
                         </div>
@@ -28,8 +26,4 @@
     </main>
 {% endblock %}
 {% block footer %}{% endblock footer %}
-{% block extrascript %}
-    <script type="application/javascript">
-        notification.info("<p class='{{ direction.panel }}'>" + "{% trans "Thanks for spending some quality time with the Web site today." %}" + "</p>", 'top', '{{ direction.notify }}');
-    </script>
-{% endblock %}
+

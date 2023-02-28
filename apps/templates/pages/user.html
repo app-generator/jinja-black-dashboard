@@ -1,5 +1,5 @@
 {% extends 'layouts/base.html' %}
-{% load static %}
+
 {% block content %}
 <div class="content">
   <div class="row">
@@ -99,7 +99,7 @@
             <div class="block block-three"></div>
             <div class="block block-four"></div>
             <a href="javascript:void(0)">
-              <img class="avatar" src="{% static 'assets/img/emilyz.jpg' %}" alt="...">
+              <img class="avatar" src="{{url_for('static', filename= 'assets/img/emilyz.jpg')}}" alt="...">
               <h5 class="title">Mike Andrew</h5>
             </a>
             <p class="description">
